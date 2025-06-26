@@ -31,7 +31,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   function displayNotFound() {
     dogImage.style.display = "none";
-    dogName.textContent = "Breed not found";
+    dogName.textContent = "Breed not found!!";
     dogDetails.textContent = "Please try a different breed name";
     favBtn.style.display = "none";
   }
@@ -131,7 +131,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
     li.append(span, editBtn, deleteBtn);
-    favouritesList.appendChild
+    favouritesList.appendChild(li);
   }
 
   // Add new breed form
