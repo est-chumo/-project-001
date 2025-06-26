@@ -1,62 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dog Breed Explorer</title>
-    <link rel="stylesheet" href="./style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dog Breed Explorer</title>
+  <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-<!--navigation bar-->
-    <nav class="navbar">
-        <div class="logo">🐶Dog Explorer</div>
-       
-        </nav>
-        <!--main content starts here-->
-    <main id="main-content">
-    <!--intro text-->
-         <h1>Welcome to the Dog Breed Explorer</h1>
-         <h6>By Elvis Chumo</h6>
-         <!--what the site is about-->
-         <p>
-            Welcome to the Dog Breed Explorer. the ultimate place for dog lovers, curious minds and future dog owners. this is a site whereby you will be able to view and understand more about the types of breeds of dogs, their characteristics(personalities), origin and also be able to view adorable pictures of them. this is to help people research and know more on the breed of dog they want before adopting one.
-         </p>
+  <header>
+    <h1>Welcome to the Dog Breed Explorer</h1>
+    <p><strong>By Elvis Chumo</strong></p>
+    <p>Welcome to the Dog Breed Explorer: the ultimate place for dog lovers, curious minds and future dog owners. 
+      This is a site where you can view and learn about different dog breeds, their characteristics, origin, 
+      and see adorable pictures of them. This helps people research and learn about dog breeds before adopting.</p>
+  </header>
 
-    <!--inserting search bar-->
-
-    <section id="search-section">
-        <input type="text" id="search-input" placeholder="search dog breed ...">
-        <button id="search-btn">search</button>
-        </section>
-        
-    
-    <!-- container for more dog information-->
-     <section id="dog-display">
-     <div id="dog-image-container">
-        <!--dog images-->
-        <img id="dog-image" src="" alt="dog image" style="max-width: 300px; display: none;">
-        </div>
-      
-
-    <!--favourites button-->
-    <button id="fav-btn" 
-            style="display: none;">Add to Favourites</button>
-
-    <h3>Favourites:</h3>
-
-      <ul id="favourites-list"></ul>
-
-            <!--breed result display-->
-            <div id="dog-information-container">
-                <h2 id="dog-name"></h2>
-                <p- id="dog-details"></p->
-        </div>
+  <main>
+    <section class="search-section">
+      <div class="search-container">
+        <input type="text" id="search-input" placeholder="Enter dog breed...">
+        <button id="search-btn">Search</button>
+      </div>
     </section>
-</main>
-    
 
-<!--linking .js code -->
+    <section class="dog-display">
+      <img id="dog-image" alt="Dog breed image">
+      <h2 id="dog-name"></h2>
+      <p id="dog-details"></p>
+      <button id="fav-btn">Add to Favorites</button>
+    </section>
 
-    <script src="./index.js"></script>
+    <section class="favorites-section">
+      <h3>Favorites:</h3>
+      <ul id="favourites-list"></ul>
+    </section>
+
+    <section class="add-breed">
+      <h3>Add New Breed</h3>
+      <form id="add-breed-form">
+        <label for="new-breed-name">Breed Name:</label>
+        <input type="text" id="new-breed-name" required>
+        
+        <label for="new-breed-origin">Origin:</label>
+        <input type="text" id="new-breed-origin" required>
+        
+        <label for="new-breed-image">Image URL:</label>
+        <input type="url" id="new-breed-image" required>
+        
+        <label for="new-breed-subbreeds">Sub-breeds (comma separated):</label>
+        <input type="text" id="new-breed-subbreeds">
+        
+        <button type="submit">Add Breed</button>
+      </form>
+    </section>
+  </main>
+
+  <script src="./index.js"></script>
 </body>
 </html>
