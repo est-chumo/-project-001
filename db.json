@@ -1,0 +1,65 @@
+{
+  "breeds": [
+    {
+      "name": "affenpinscher",
+      "subBreeds": [],
+      "origin": "unknown",
+      "image": "https://images.dog.ceo/breeds/hound-afghan/n02088094_1003.jpg"
+    },
+    {
+      "name": "african",
+      "subBreeds": [],
+      "origin": "unknown",
+      "image": "https://images.dog.ceo/breeds/hound-afghan/n02088094_1479.jpg"
+    },
+    {
+      "name": "australian",
+      "subBreeds": ["kelpie", "shepherd"],
+      "origin": "Australia",
+      "image": "https://images.dog.ceo/breeds/australian-shepherd/pepper.jpg"
+    },
+    {
+      "name": "ruto",
+      "subBreeds": ["indian"],
+      "origin": "India",
+      "image": "https://images.dog.ceo/breeds/hound-afghan/n02088094_1459.jpg"
+    },
+    {
+      "name": "bulldog",
+      "subBreeds": ["boston", "english", "french"],
+      "origin": "unknown",
+      "image": "https://images.dog.ceo/breeds/hound-afghan/n02088094_1724.jpg"
+    },
+    {
+      "name": "labrador",
+      "subBreeds": ["indian"],
+      "origin": "India",
+      "image": "https://images.dog.ceo/breeds/hound-basset/n02088238_10102.jpg"
+    },
+    {
+      "name": "husky",
+      "subBreeds": ["cardigan"],
+      "origin": "United Kingdom",
+      "image": "https://images.dog.ceo/breeds/hound-basset/n02088238_10288.jpg"
+    },
+    {
+      "name": "dalmatian",
+      "subBreeds": [],
+      "origin": "Croatia",
+      "image": "https://images.dog.ceo/breeds/hound-basset/n02088238_10288.jpg"
+    },
+    {
+      "name": "dane",
+      "subBreeds": ["great"],
+      "origin": "Denmark",
+      "image": "https://images.dog.ceo/breeds/hound-basset/n02088238_10592.jpg"
+    },
+    {
+      "name": "finnish",
+      "subBreeds": ["lapphund"],
+      "origin": "Finland",
+      "image": "https://images.dog.ceo/breeds/hound-basset/n02088238_13799.jpg"
+    }
+    
+  ]
+}
