@@ -131,7 +131,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
     li.append(span, editBtn, deleteBtn);
-    favouritesList.appendChild(li);
+    favouritesList.appendChild
   }
 
   // Add new breed form
