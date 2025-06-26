@@ -68,9 +68,14 @@ document.addEventListener("DOMContentLoaded", () => {
       displayError(error);
     }
   });
-  f
-    
 
+  favBtn.addEventListener("click", () => {
+    const breedName = favBtn.dataset.breed;
+    if (breedName && !favourites.includes(breedName)) {
+      favourites.push(breedName);
+      addToFavouritesList(breedName);
+    }
+  });
 
   function addToFavouritesList(breedName) {
     const li = document.createElement("li");
@@ -84,13 +89,7 @@ document.addEventListener("DOMContentLoaded", () => {
     editBtn.className = "fav-edit-btn";
     editBtn.addEventListener("click", async () => {
       const newName = prompt("Enter new name for the breed:", breedName);
-      if (newName && newName.trim() !== breedName) {
-        try {
-          const response = await fetch(`${API_URL}/${breedName.toLowerCase()}`, {
-            method: "PATCH",
-            headers: { "Content-Type": "application/json" },
-            body: JSON.stringify({ name: newName.trim().toLowerCase() })
-          });
+     
           
           if (!response.ok) throw new Error("Failed to update breed");
           
