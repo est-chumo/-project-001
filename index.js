@@ -89,7 +89,11 @@ document.addEventListener("DOMContentLoaded", () => {
     editBtn.className = "fav-edit-btn";
     editBtn.addEventListener("click", async () => {
       const newName = prompt("Enter new name for the breed:", breedName);
-     
+     avBtn.addEventListener("click", () => {
+    const breedName = favBtn.dataset.breed;
+    if (breedName && !favourites.includes(breedName)) {
+      favourites.push(breedName);
+      addToFavouritesList(breedName);
           
           if (!response.ok) throw new Error("Failed to update breed");
           
@@ -113,11 +117,7 @@ document.addEventListener("DOMContentLoaded", () => {
       }
     });
 
-    const deleteBtn = document.createElement("button");
-    deleteBtn.textContent = "Delete";
-    deleteBtn.className = "fav-delete-btn";
-    deleteBtn.addEventListener("click", () => {
-      const index = favourites.indexOf(breedName);
+   
       if (index !== -1) {
         favourites.splice(index, 1);
       }
@@ -126,7 +126,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     li.append(span, editBtn, deleteBtn);
     favouritesList.appendChild(li);
-  }
+  
 
   // Add new breed form
   addBreedForm.addEventListener("submit", async (e) => {
