@@ -110,9 +110,7 @@ document.addEventListener("DOMContentLoaded", () => {
           if (favBtn.dataset.breed === breedName) {
             favBtn.dataset.breed = updated.name;
           }
-        } catch (error) {
-          console.error("Edit error:", error);
-          alert("Failed to update breed name");
+       
         }
       }
     });
