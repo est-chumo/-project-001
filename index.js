@@ -68,14 +68,9 @@ document.addEventListener("DOMContentLoaded", () => {
       displayError(error);
     }
   });
+  f
+    
 
-  favBtn.addEventListener("click", () => {
-    const breedName = favBtn.dataset.breed;
-    if (breedName && !favourites.includes(breedName)) {
-      favourites.push(breedName);
-      addToFavouritesList(breedName);
-    }
-  });
 
   function addToFavouritesList(breedName) {
     const li = document.createElement("li");
